@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <a href="index.html"><title>Coders Corner</title></a>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="Shortcut Icon" href="./assets/images/favicon.ico">
+    <!-- Bootstrap CSS JS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Skranji" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Berkshire+Swash|Righteous" rel="stylesheet">
+    <!--link font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- link style.css -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="assets/css/book.css" />
+</head>
+<body>
+
+    <!-- <div class="container-fluid"> -->
+        <section class="header item_1" >
+            <nav class="navbar" style="display:grid" >
+                
+                <h2 id="logo">Foorom</h2>                       <!-- <img id="earthlogo" src="assets/images/earthLogo.png" style="width: 40px; height:40px;"> -->
+                
+                <span class="header_icons">
+                    <a href="#"><img src="./assets/images/flatIcon/steak.png" alt=""></a>
+                    <a href="#"><img src="./assets/images/flatIcon/chicken.png" alt=""></a>
+                    <a href="#"><img src="./assets/images/flatIcon/egg.png" alt=""></a>
+                    <a href="#"><img src="./assets/images/flatIcon/sandwich.png" alt=""></a>
+                </span>
+            </nav> 
+        </section>
+            
+        <section class="item_2 QA">
+                <div id="main_section">
+        
+                        <!--title-->
+                        <h1>Welcome to Foorom Foods Quiz!</h1>
+                        <button class="btn btn-success" id="startBtn">Start</button>
+                        <!--time ramaining-->
+                        <div id="timeLeft"></div>
+                        <!--question page-->
+                        <div class="question"></div>
+                        <div class="answerList"></div>
+                        <!--answer page-->
+                        <div id="message"></div>
+                        <div id="correctedAnswer"></div>
+                        <!--final scores-->
+                        <div id="finishMessage"></div>
+                        <div id="correctAnswers"></div>
+                        <div id="incorrectAnswers"></div>
+                        <div id="unanswered"></div>
+                        <!--restart-->
+                        <div id="restart"></div>
+                      
+                    </div>
+        </section>
+
+        <section class="item_3" style="width:100%; height:500px; display:inline-flex; align-items: center; justify-content:center;" >
+            <div class="m_1" style=" width: 300px; height:300px; position:relative; display:flex; align-items: center; justify-content: space-around;">            
+                <nav class="menu">
+                        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open_1" />
+                        <label class="menu-open-button" for="menu-open_1">
+                         <img src="./assets/images/pork.png" alt="" style="height:50px; width: 50px;">
+                        </label>
+                     
+                        <a href="#"  class="menu-item blue">Bakkwa</a>
+                        <a href="#" class="menu-item green">Crispy pata</a>
+                        <a href="#" class="menu-item red">Babi guling</a>
+                        <a href="#" class="menu-item purple">Kakuni</a>
+                        <a href="https://en.wikipedia.org/wiki/Porchetta" id="porkDish" target="_blank" class="menu-item orange">Porchetta</a>
+                        <a href="#" class="menu-item lightblue">Schwenker</a>
+                </nav>
+            </div>
+            <div class="m_2" style=" width: 300px; height:300px; position:relative; display:flex; justify-content:center; align-items: center;">
+                <nav class="menu">
+                        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open_2" />
+                        <label class="menu-open-button" for="menu-open_2">
+                            <img src="./assets/images/beef.png" alt="" style="height:50px; width: 50px;">
+                        </label>
+                        
+                        <a href="#" class="menu-item blue">Rendang</a>
+                        <a href="#" class="menu-item green">Goulash</a>
+                        <a href="#" class="menu-item red">Meatloaf</a>
+                        <a href="#" class="menu-item purple">Wellington</a>
+                        <a href="#" class="menu-item orange">Bakso</a>
+                        <a href="https://en.wikipedia.org/wiki/Galbi"  target="_blank" id="beefDish" class="menu-item lightblue">Galbi</a>
+                </nav>
+            </div>
+            <div class="m_3" style=" width: 300px; height:300px; position:relative; display:flex; justify-content:center; align-items: center;">       
+                <nav class="menu">
+                        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open_3" />
+                        <label class="menu-open-button" for="menu-open_3">
+                            <img src="./assets/images/chicken.png" alt="" style="height:50px; width: 50px;">
+                        </label>
+                        
+                        <a href="#" class="menu-item blue">Backhendl</a>
+                        <a href="#" class="menu-item green">Buldak</a>
+                        <a href="https://en.wikipedia.org/wiki/Dapanji" target="_blank"  id="chickenDish"class="menu-item red">Dapanji</a>
+                        <a href="#" class="menu-item purple">Marinated</a>
+                        <a href="#" class="menu-item orange">Chikuzenni</a>
+                        <a href="#" class="menu-item lightblue">Gribenes</a>
+                </nav>
+            </div>
+            <div class="m_4" style=" width: 300px; height:300px; position:relative; display:flex; justify-content:center; align-items: center;">
+                <nav class="menu">
+                        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open_4" />
+                        <label class="menu-open-button" for="menu-open_4">
+                            <img src="./assets/images/seafood.png" alt="" style="height:50px; width: 50px;">
+                        </label>
+                        
+                        <a href="#" class="menu-item blue">Bánh canh</a>
+                        <a href="#" class="menu-item green">Fideuà</a>
+                        <a href="#" class="menu-item red">San-nakji</a>
+                        <a href="https://en.wikipedia.org/wiki/Namasu" target="_blank" id="seafoodDish" class="menu-item purple">Namasu</a>
+                        <a href="#" class="menu-item orange">cuttlefish</a>
+                        <a href="#" class="menu-item lightblue">Ikan bakar</a>
+                </nav>
+            </div>
+        </section>
+
+        
+        
+        <section class="item_4" style="height:600px;">
+                
+                <input id="pac-input" class="controls" type="text" value=" ">
+                <div id="map"></div>
+                
+        </section>
+
+        <section class="item_7">
+                <h2>Foorom Search</h2>
+
+                <div id="search-form">
+                    <br>
+                    <input id="query-field" type="text" name="query" value="lol">
+                    <br>
+                    <button id="submit-button" type="button" value="Search">Go</button>
+                </div>
+                <div id="display"></div>
+        </section>
+
+        <section class="books item_5" style="padding-top:100px; padding-bottom: 150px;" >
+            <h1 style="text-align: center;">Reading enriches the mind</h1>
+            <div class="container">
+                <div class="component">
+                     <ul class="align">
+                        <li>
+                        <figure class='book'>
+                        <!-- Front -->           
+                            <ul class='hardcover_front'>
+                                <li>
+                                    <img src="./assets/images/book1.jpg" alt="" width="100%" height="100%">
+                                </li>
+                                <li></li>
+                            </ul>           
+                        <!-- Pages -->           
+                            <ul class='page'>
+                                <li></li>
+                                <li>
+                                    <a class="btn" href="https://www.tastingtable.com/culture/national/defining-american-food-cuisine" target="_blank">Read It!</a>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>          
+                        <!-- Back -->           
+                            <ul class='hardcover_back'>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <ul class='book_spine'>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <figcaption>
+                                <h2>American Food</h2>
+                                <span>By Ruth Tobias</span>
+                                <p>Just as our country was founded by immigrants on someone else's land, so, too, our cuisine, which was built by immigrants on someone else's foodways...</p>
+                            </figcaption>
+                        </figure>
+                        </li>
+                        <li>
+                        <figure class='book'>
+                        <!-- Front -->           
+                            <ul class='hardcover_front'>
+                                <li>
+                                    <img src="./assets/images/book2.png" alt="" width="100%" height="100%">
+                                </li>
+                                <li></li>
+                            </ul>           
+                        <!-- Pages -->           
+                            <ul class='page'>
+                                <li></li>
+                                <li>
+                                    <a class="btn" href="https://www.cnn.com/travel/article/world-best-food-dishes/index.html" target="_blank">READ IT!</a>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>          
+                        <!-- Back -->           
+                            <ul class='hardcover_back'>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <ul class='book_spine'>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <figcaption>
+                                <h2>50 Best Foods</h2>
+                                <span>By CNN Travel staff</span>
+                                <p>We've scoured the planet for what we think are 50 of the most delicious foods ever created. For now, feast your eyes and control your drooling...</p>
+                            </figcaption>
+                        </figure>
+                        </li>
+                        <li>
+                        <figure class='book'>
+                        <!-- Front -->           
+                            <ul class='hardcover_front'>
+                                <li>
+                                    <img src="./assets/images/book3.jpg" alt="" width="100%" height="100%">
+                                </li>
+                                <li></li>
+                            </ul>           
+                        <!-- Pages -->           
+                            <ul class='page'>
+                                <li></li>
+                                <li>
+                                    <a class="btn" href="#">READ IT!</a>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>          
+                        <!-- Back -->           
+                            <ul class='hardcover_back'>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <ul class='book_spine'>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <figcaption>
+                                <h2>The Messy History of Ramen</h2>
+                                <span>By Alison Herman</span>
+                                <p>NYU professor George Solt discusses ramen’s history, tracing its evolution from the working man's fuel to international icon of Japanese culture...</p>
+                            </figcaption>
+                        </figure>
+                        </li>
+                        <li>
+                        <figure class='book'>
+                        <!-- Front -->           
+                            <ul class='hardcover_front'>
+                                <li>
+                                    <img src="./assets/images/book4.jpg" alt="" width="100%" height="100%">
+                                </li>
+                                <li></li>
+                            </ul>           
+                        <!-- Pages -->           
+                            <ul class='page'>
+                                <li></li>
+                                <li>
+                                    <a class="btn" href="#">READ IT!</a>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>          
+                        <!-- Back -->           
+                            <ul class='hardcover_back'>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <ul class='book_spine'>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <figcaption>
+                                <h2>The Evolution of American Barbecue</h2>
+                                <span>By Natasha Geiling</span>
+                                <p>How America’s meaty tradition grew from Caribbean roots to the four distinct styles we know today...</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    </ul>  
+                </div>
+            </div><!-- /container -->
+
+        </section>
+
+        <!--Footer-->
+        <footer class="footer-distributed item_6">
+                <!--left part-->
+                <div class="footer-left">
+                    <p id="logo-footer">Foorom  <img id="beelogo-footer" src="assets/images/earthLogo.png" style="width: 40px; height:40px;"></p>
+                    <p class="footer-links">
+                        <a href="#">Home</a>
+                        ·
+                        <a href="#">Blog</a>
+                        ·
+                        <a href="#">Pricing</a>
+                        ·
+                        <a href="#">About</a>
+                        ·
+                        <a href="#">FAQ</a>
+                        ·
+                        <a href="#">Contact</a>
+                    </p>
+                    <p class="footer-company-name">Company Name &copy; 2018</p>
+                </div>
+                <!--center part-->
+                <div class="footer-center">
+                    <div>
+                        <i class="fas fa-map-marker"></i>
+                        <p><span>3900 Adeline</span> Oakland, CA</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone"></i>
+                        <p>+1 (520) 301-7980</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="mailto:support@company.com">support@company.com</a></p>
+                    </div>
+                </div>
+                <!--right part-->
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                        <span>About the Foorom</span>
+                        Get your child learning with Foorom -- A lightweight adolescent-oriented Geography educational websites!
+                    </p>
+                    <div class="footer-icons">
+                        <a href="#"><i class="fab fa-facebook-square"></i>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+  
+        
+            
+      
+    <!-- link jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js" type="text/javascript"></script>
+    <script src="assets/javascript/game.js" type="text/javascript"></script>
+
+    <!--Google map-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBn0FeAZwxx1V7BSZNAoEplErD0ksXUQgQ&libraries=places&callback=initAutocomplete"
+         async defer></script>
+</body>
+</html>
