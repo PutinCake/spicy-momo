@@ -2,22 +2,22 @@ $(document).ready(function () {
  
 
     $("#porkDish").click(function(){
-      $("#query-field").val("Porchetta").change();
+      $("#query-field").val("Italy").change();
       $("#pac-input").val("Italy").change();
   });
 
     $("#beefDish").click(function(){
-      $("#query-field").val("Galbi").change();
+      $("#query-field").val("Korea").change();
       $("#pac-input").val("Korea").change();
     });
 
     $("#chickenDish").click(function(){
-      $("#query-field").val("Dapanji").change();
+      $("#query-field").val("Xinjiang China").change();
       $("#pac-input").val("Xinjiang, China").change();
     });
 
     $("#seafoodDish").click(function(){
-      $("#query-field").val("Namasu").change();
+      $("#query-field").val("Japan").change();
       $("#pac-input").val("Japan").change();
     });
 
